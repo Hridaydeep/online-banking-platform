@@ -1,5 +1,4 @@
 # online-banking-platform
-# Banking Accountability Application
 
 ## Overview
 
