@@ -20,6 +20,9 @@ The application supports the following features:
 - **Get all account user information**: Retrieve details for all users and their accounts.
 - **Filter accounts by balance**: Retrieve accounts that meet a certain balance criterion.
 
+## Architecture
+![Financial Application drawio](https://github.com/user-attachments/assets/7ba17e38-a7f3-4ed5-b8f6-435d60d0abcf)
+
 ## Technologies Used
 
 - **Spring Boot**: For building the backend and handling REST APIs.
