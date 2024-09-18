@@ -86,7 +86,8 @@ The application allows for the following **CRUD** operations on the account enti
    
 8. **Filter Accounts by Balance**  
    `/REST-API/accounts/ListOfAccountGreater/{amount}`
-   ![Filter Accounts Endpoint](https://drive.google.com/file/d/1gZusWiqqpSnH97VDUHevPmR5xo0HT_uy/view?usp=sharing)
+   ![Filter Accounts Endpoint] ![filter](https://github.com/user-attachments/assets/edea6ad5-6d96-4453-8879-02dcf1e994de)
+
 
 ## Database
 
