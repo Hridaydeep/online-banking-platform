@@ -58,35 +58,45 @@ The application allows for the following **CRUD** operations on the account enti
 
 1. **Create Account**  
    `/REST-API/accounts/newUser`
-   ![Create Account Endpoint](https://example.com/path-to-screenshot.png)
+   
+![newUser](https://github.com/user-attachments/assets/bb827f3c-055c-47bb-b669-462002e8a85f)
    
 2. **Find Account by ID**  
    `/REST-API/accounts/findBy/{id}`
-   ![Find Account Endpoint](https://example.com/path-to-screenshot.png)
+   
+   ![FindByID](https://github.com/user-attachments/assets/6158a8bf-1b38-49e1-b014-6d3c33950d86)
    
 3. **Deposit Money**  
    `/REST-API/accounts/Self-Deposit/{id}`
-   ![Deposit Money Endpoint](https://example.com/path-to-screenshot.png)
+   
+   ![DepositeMoney](https://github.com/user-attachments/assets/4d28d37e-72ab-48ef-9fb9-41b943c36e8b)
    
 4. **Withdraw Money**  
    `/REST-API/accounts/Withdraw/{id}`
-   ![Withdraw Money Endpoint](https://example.com/path-to-screenshot.png)
+   
+   ![Withdraw](https://github.com/user-attachments/assets/84e6b6ef-cbd8-4496-b701-6fb5c2d66153)
    
 5. **Send Money**  
    `/REST-API/accounts/{id}/moneyTransfer`
-   ![Send Money Endpoint](https://example.com/path-to-screenshot.png)
    
+   ![MoneyTransfer](https://github.com/user-attachments/assets/c7868411-fa59-42ce-9642-fa9a8397b727)
+
 6. **Delete Account**  
    `/REST-API/accounts/Delete-Account/{id}`
-   ![Delete Account Endpoint](https://example.com/path-to-screenshot.png)
+   
+   ![Del1](https://github.com/user-attachments/assets/334b2b0c-b2ae-402b-b036-12620c212782)
+   ![Del2](https://github.com/user-attachments/assets/e4f1f4d2-102b-4a5b-b93e-c5bde22fa9f1)
+
    
 7. **Get All Accounts**  
    `/REST-API/accounts/All-User-Info`
-   ![Get All Accounts Endpoint](https://example.com/path-to-screenshot.png)
+   
+   ![AllInfo](https://github.com/user-attachments/assets/9f99297c-815e-465f-86de-4a634bdc5df8)
    
 8. **Filter Accounts by Balance**  
    `/REST-API/accounts/ListOfAccountGreater/{amount}`
-   ![Filter Accounts Endpoint] ![filter](https://github.com/user-attachments/assets/edea6ad5-6d96-4453-8879-02dcf1e994de)
+
+    ![filter](https://github.com/user-attachments/assets/edea6ad5-6d96-4453-8879-02dcf1e994de)
 
 
 ## Database
@@ -95,12 +105,3 @@ The application allows for the following **CRUD** operations on the account enti
 
 - **Accounts**: Stores account details such as account ID, balance, and user information.
   
-Example of database schema:
-
-```sql
-CREATE TABLE accounts (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_name VARCHAR(255),
-    balance DOUBLE,
-    ...
-);
