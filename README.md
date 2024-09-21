@@ -24,7 +24,8 @@ The application supports the following features:
 ![Financial Application drawio](https://github.com/user-attachments/assets/7ba17e38-a7f3-4ed5-b8f6-435d60d0abcf)
 
 ## Connecting with the frontend Till Now
-![Financial Application drawio](https://github.com/user-attachments/assets/627adc12-44d7-4720-8e87-670a84dd2820)
+[GitHub Attachment](https://github.com/user-attachments/assets/627adc12-44d7-4720-8e87-670a84dd2820)
+
 
 ## Technologies Used
 
