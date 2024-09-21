@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - DeepWealth Bank</title>
+    <link rel="stylesheet" href="SuccessCSS.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <span><a href="WelcomePage_HTML.HTML">Locate near you</a></span>
+            <span><a href="#">Contact us</a></span>
+            <span><a href="#">About us</a></span>
+            <span><a href="Login.HTML">Sign in</a></span>
+        </div>
+    </nav>
+    
+    <section class="info-section">
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <div class="info-links">
+            <span>News and Updates</span> 
+            <span>Accounts</span> 
+            <span>Deposit</span> 
+            <span>Payments</span> 
+            <span>Card</span> 
+            <span>Investment</span> 
+            <span>Insurance</span> 
+            <span>Special Service</span>
+        </div>
+    </section>
+
+    <main class="main-section">
+        <div class="res">
+            <h2>Congratulations!</h2>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <script>
+        // Function to get query parameters
+        function getQueryParams() {
+            const params = {};
+            window.location.search.substr(1).split("&").forEach(function(item) {
+                const parts = item.split("=");
+                params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+            });
+            return params;
+        }
+
+        // Display the ID and Name inside the main section
+        const params = getQueryParams();
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `<p>ID: ${params.id}</p><p>Name: ${params.name}</p>`;
+    </script>
+</body>
+</html>

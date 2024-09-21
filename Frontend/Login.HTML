@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoginCSS.css">
+    <title>DeepWealth Bank</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <span><a href="WelcomePage_HTML.HTML">Locate near you</a></span>
+            <span><a href="#">Contact us</a></span>
+            <span><a href="#">About us</a></span>
+            <span><a href="#">Sign in</a></span>
+        </div>
+    </nav>
+    
+    <section class="info-section">
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <div class="info-links">
+            <span>News and Updates</span> 
+            <span>Accounts</span> 
+            <span>Deposit</span> 
+            <span>Payments</span> 
+            <span>Card</span> 
+            <span>Investment</span> 
+            <span>Insurance</span> 
+            <span>Special Service</span>
+        </div>
+    </section>
+
+    <main class="main-section">
+        <div class="SignUp">
+        <h2>New User Login</h2>
+            <form id="userForm" class="form-container">
+                <label for="accountHolderName">Account Holder Name:</label>
+                <input type="text" id="accountHolderName" name="accountHolderName" required>
+
+                <label for="balance">Balance:</label>
+                <input type="number" id="balance" name="balance" min="1000" step="0.01" value="1000.00" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    <div id="result"></div>
+    </main>
+
+    
+
+    <script src="LoginJS.js" defer></script>
+    
+</body>
+</html>

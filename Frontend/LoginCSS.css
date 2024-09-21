@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 8vh;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex; /* Use flexbox to align links */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-links span {
+    margin: 0 15px; /* Spacing between links */
+    transition: transform 0.2s; /* Smooth transition for pop-up effect */
+}
+
+.nav-links span:hover {
+    transform: scale(1.1); /* Slight pop-up effect on hover */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Change text color */
+    transition: color 0.2s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+    color: rgba(255, 255, 255, 0.8); /* Change color on hover */
+}
+
+.info-section {
+    width: 100%;
+    height: 16vh;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    height: 60%;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.info-links {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+}
+
+.info-links span {
+    margin: 0 10px; /* Adjust spacing as needed */
+    transition: transform 0.2s; /* Smooth transition for pop-up effect */
+}
+.info-links span:hover {
+    transform: scale(1.1); /* Slight pop-up effect on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.main-section {
+    width: calc(100% - 40px); /* Adjust width to account for left and right margins */
+    height: calc(100% - 24vh - 20px); /* Adjust height to account for bottom margin */
+    margin: 0 20px 20px; /* 20px margin for left, right, and bottom */
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(86, 227, 10), rgb(79, 189, 165), rgb(74, 136, 111)); /* Gradient */
+    display: flex; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+}
+
+.main-section h1{
+    font-size: 60px;
+    color: #f4f4f4;
+}
+
+.slogan {
+    margin-top: 10px;
+    font-size: 1em;
+    opacity: 1; /* Ensure opacity is 1 for visibility */
+    /*transition: opacity 0.5s ease-in;*/
+    color: #444444; /* Set text color */
+}
+
+
+
+
+
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Increased padding for more space */
+    background-color: rgba(255, 255, 255, 0.7); /* More transparent white */
+    border-radius: 15px; /* Slightly larger border radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Slightly heavier shadow for depth */
+    max-width: 900px; /* Increased max width */
+    margin: auto;
+}
+.SignUp h2{
+    margin-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 14px;
+    color: green; /* Success message color */
+}

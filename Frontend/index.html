@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepWealth Bank - Unlock Your Financial Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#signin">Sign In/Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to DeepWealth Bank</h1>
+        <div class="taglines">
+            <h3 class="tagline">Unlock the Power of Wealth with Us.</h3>
+            <h3 class="tagline">Empowering Your Financial Journey.</h3>
+            <h3 class="tagline">Secure Your Future with DeepWealth.</h3>
+            <h3 class="tagline">Where Your Wealth Grows Stronger.</h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h2>Aside Section</h2>
+            <p>This is the aside area, often used for additional information or navigation.</p>
+        </aside>
+
+        <main>
+            <article>
+                <h2>Article Title</h2>
+                <figure>
+                    <img src="example-image.jpg" alt="Sample Image">
+                    <figcaption>Figure 1: A sample image caption</figcaption>
+                </figure>
+                <p>This is a paragraph inside the article. It provides some information about the content related to the image above.</p>
+            </article>
+
+            <section>
+                <h2>Section Title</h2>
+                <p>This is a separate section within the main content area.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Footer Section &copy; 2024</p>
+    </footer>
+
+    <script>
+        const taglines = document.querySelectorAll('.tagline');
+        let currentIndex = 0;
+
+        function showTagline(index) {
+            const tagline = taglines[index];
+            tagline.innerHTML = ''; // Clear previous content
+            tagline.style.display = 'block'; // Show the tagline
+
+            const text = tagline.textContent;
+            let letterIndex = 0;
+
+            const interval = setInterval(() => {
+                if (letterIndex < text.length) {
+                    tagline.innerHTML += text[letterIndex++];
+                } else {
+                    clearInterval(interval);
+                    // Hide the tagline after a short delay before showing the next
+                    setTimeout(() => {
+                        tagline.style.display = 'none';
+                        currentIndex = (currentIndex + 1) % taglines.length;
+                        showTagline(currentIndex);
+                    }, 2000); // Time to display the full tagline
+                }
+            }, 100); // Time between letters
+        }
+
+        showTagline(currentIndex); // Start the animation
+    </script>
+</body>
+</html>

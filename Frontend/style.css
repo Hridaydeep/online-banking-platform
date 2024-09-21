@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+nav {
+    background-color: navy;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Header styling with gradient */
+header {
+    background: linear-gradient(to right, navy, rgb(116, 65, 218));
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px; /* Space below navbar */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Taglines styling */
+.taglines {
+    position: relative;
+    height: 2em; /* Enough height for the text */
+}
+
+.tagline {
+    display: none; /* Initially hidden */
+}
+
+/* Container layout */
+.container {
+    display: grid;
+    grid-template-areas:
+        "aside main"
+        "aside main";
+    grid-gap: 10px;
+    padding: 20px;
+    margin-top: 20px; /* Adjusted to add space for header */
+}
+
+/* Fixed Aside */
+aside {
+    grid-area: aside;
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: fixed;
+    top: 220px; /* Below header */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 220px); /* Full height, considering header */
+    overflow-y: auto;
+}
+
+/* Main content next to aside */
+main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 220px; /* Adjusted for fixed aside */
+}
+
+/* Footer at the bottom */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Add space above the footer */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: 20px;
+    background-color: #e9e9e9;
+    padding: 10px;
+}
