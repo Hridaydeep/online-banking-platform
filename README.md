@@ -23,6 +23,9 @@ The application supports the following features:
 ## Architecture
 ![Financial Application drawio](https://github.com/user-attachments/assets/7ba17e38-a7f3-4ed5-b8f6-435d60d0abcf)
 
+## Connecting with the frontend Till Now
+![Financial Application drawio](https://github.com/user-attachments/assets/627adc12-44d7-4720-8e87-670a84dd2820)
+
 ## Technologies Used
 
 - **Spring Boot**: For building the backend and handling REST APIs.
